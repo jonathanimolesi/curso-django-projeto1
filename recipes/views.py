@@ -8,6 +8,5 @@ def home(request):
     return render(request, 'recipes/pages/home.html')
 
 
-def sobre(request):
-    return HttpResponse('Uma linda STRING 2222222 ')
-
+def recipe(request, id):
+    return render(request, 'recipes/pages/recipe-view.html')
